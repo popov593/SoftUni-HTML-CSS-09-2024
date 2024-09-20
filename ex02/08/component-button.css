@@ -1,0 +1,30 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+h2 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.button {
+    background: #cfcccc;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 5px;
+    display: inline-block;
+    font-size: 0.7rem;
+    border: 1px solid #cfcccc;
+}
+.button:first-of-type {
+    margin-left: 0px;
+}
+.primary {
+    background: orange;
+}
+.secondary {
+    background: yellow;
+}
+.outline {
+    background: #FFF;
+}

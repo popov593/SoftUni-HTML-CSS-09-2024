@@ -1,0 +1,25 @@
+body {
+    border: 2px solid green;
+    margin: 0px;
+    padding: 20px 0;
+}
+.site-main {
+    border: 2px solid blue;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+.site-main > header,
+.site-main > main,
+.site-main > footer {
+    border: 2px solid #000;
+    text-align: center;
+}
+.site-main > header,
+.site-main > main {
+    margin-bottom: 20px;
+}
+.site-main h1 {
+    font-size: 1rem;
+    font-weight: 500;
+}

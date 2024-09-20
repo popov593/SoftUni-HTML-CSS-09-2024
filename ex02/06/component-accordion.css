@@ -1,0 +1,19 @@
+body {
+    font-family: "Protest Guerrilla", sans-serif;
+}
+.accordion-container {
+    width: 70%;
+    margin: 30px auto;
+}
+.accordion-container details {
+    border: 1px solid #c0c0c0;
+    padding: 20px;
+    border-bottom: 0;
+}
+.accordion-container details:last-child {
+    border-bottom: 1px solid #c0c0c0;
+}
+.accordion-container details summary {
+    font-weight: 700;
+    cursor: pointer;
+}
