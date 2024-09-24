@@ -1,0 +1,68 @@
+.flex-container {
+    width: 300px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    align-items: flex-start;   
+}
+
+.flex-container .flex-item {
+    background: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.sg .flex-item {
+    flex-basis: 300px;
+}
+
+.flex-container.fg .flex-item {
+    background: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.flex-shrink-0 .flex-item {
+    flex-shrink: 0;
+}
+
+.flex-shrink-child-2 .flex-item {
+    flex-shrink: 0;
+}
+
+.flex-shrink-child-2 .flex-item:nth-child(2) {
+    flex-shrink: 1;
+}
+
+.flex-grow-1 .flex-item:nth-child(1) {
+    flex-grow: 1;
+}
+
+.flex-grow-1 .flex-item:nth-child(2) {
+    flex-grow: 2;
+}
+
+.flex-grow-1 .flex-item:nth-child(3) {
+    flex-grow: 3;
+}
+
+.flex-basis-40px .flex-item {
+    /*flex-basis: 40px;*/
+}
+
+.flex-basis-40px .flex-item {
+    flex: 0 0 40px;
+}
+
+.self-example {
+    height: 400px;
+    align-items: flex-start;
+}
+
+.self-example .flex-item:nth-child(3) {
+    align-self: center;
+}
+
+.self-example .flex-item:nth-child(5) {
+    align-self: flex-end;
+}
