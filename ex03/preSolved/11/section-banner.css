@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+html {
+    font: 12px/1.5 "Lato", Verdana, sans-serif;
+}
+
+body {
+    font: inherit;
+    background: #EEE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 900px;
+}
+
+article {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    gap: 2em;
+    border-radius: 0.3em;
+    box-shadow: -0.2em 0.2em 0.5em 0 rgba(0,0,0,0.05);
+}
+
+article .media {
+    flex: 0 0 30%;
+    order: 1;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.3em;
+}
+
+article header {
+    padding-bottom: 0.5em;
+}
+
+article hgroup h1,
+article hgroup h2 {
+    line-height: 1;
+}
+
+article hgroup h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0.4rem 0;
+    opacity: 0.8;
+}
+
+article hgroup h2 {
+    opacity: 0.5;
+}
+
+article p {
+    opacity: 0.6;
+    padding-bottom: 1.5em;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    background: rebeccapurple;
+    text-decoration: none;
+    padding: 0.5em 1.3em;
+    border-radius: 0.3em;
+}
+
+.button + .button {
+    margin-left: 1em;
+}
+
+.button.secondary {
+    background: #eee;
+    color: #666;
+}
+
+.media:empty {
+    background: #eee;
+    border: 1px solid #ccc;
+}

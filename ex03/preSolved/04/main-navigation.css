@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF;
+    font-family: Lato, sans-serif;
+    padding: 2em 2em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-navigation ul ul,
+.main-navigation {
+    background: #EEE;
+    border-radius: 0.3em;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.2);
+}
+
+.main-navigation > ul {
+    display: flex;
+    padding: 0 0.25em;
+}
+
+.main-navigation ul ul {
+    display: none;
+    flex-direction: column;
+    padding: 0.25em 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 18em;
+    z-index: 200;
+    background: #eee;
+}
+
+.main-navigation ul ul ul {
+    top: -0.25em;
+    left: 100%;
+}
+
+.main-navigation li {
+    display: block;
+    list-style: none outside;
+    position: relative;
+    padding: 0.5em 0.25em;
+}
+
+.main-navigation li li {
+    padding: 0.25em 0.5em;
+}
+
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+    color: darkorange;
+    padding: 0.6em 1em;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+    line-height: 1;
+}
+
+.main-navigation li:hover > a,
+.main-navigation a:hover {
+    background: darkorange;
+    color: #fff;
+}
+
+.main-navigation li:hover > a {
+    position: relative;
+    z-index: 300;
+}
+
+.main-navigation li:hover > ul {
+    display: flex;
+
+}

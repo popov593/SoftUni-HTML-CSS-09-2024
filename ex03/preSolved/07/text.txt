@@ -1,0 +1,14 @@
+Collapsable & expandable tree view in HTML & CSS only
+
+Giant planets
+
+    Gas giants
+    
+        Jupiter
+        Saturn
+
+
+    Ice giants
+    
+        Uranus
+        Neptune

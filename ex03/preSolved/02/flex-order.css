@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EEE;
+    font: 14px/1.5 Lato, sans-serif;
+    margin: 0;
+    padding: 4em 2em;
+}
+
+.site {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.site > * {
+    border: 1px solid #AAA;
+    padding: 2em;
+    flex: 1 1 auto;
+    border-radius: 0.3em;
+}
+
+.site > header,
+.site > footer {
+    flex: 1 1 100%;
+}
+
+.site > main {
+    flex-grow: 7;
+}
+
+.site > aside {
+    flex-grow: 3;
+}
+
+.site + .site {
+    margin-top: 4em;
+}
+
+.site.aside-left > header { order: 1; }
+.site.aside-left > aside { order: 2; }
+.site.aside-left > main { order: 3; }
+.site.aside-left > footer { order: 4; }

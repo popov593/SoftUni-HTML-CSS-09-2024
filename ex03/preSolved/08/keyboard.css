@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-size: 12px;
+}
+
+.keyboard {
+    background: #ddd;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #999;
+    box-shadow: 0 0.3em 0 0 #aaa;
+}
+
+.key-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.key {
+    height: 3em;
+    aspect-ratio: 1.1/1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 3px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none; /* Removes the default focus outline */
+    white-space: nowrap;
+    box-shadow: 0 0.2em 0 0 #BBB;
+    text-transform: lowercase;
+    transition:
+        background-color 0.1s ease-in-out,
+        border-color 0.1s ease-in-out,
+        color 0.1s ease-in-out;
+}
+
+.key:hover,
+.key:focus-visible {
+    background: #666 !important;
+    color: #fff;
+    border-color: #333;
+    box-shadow: 0 0.2em 0 0 #333;
+}
+
+.key:active {
+    box-shadow: 0 0 0 0 #333;
+    position: relative;
+    top: 0.16em;
+}
+
+.key.special {
+    background: #eee;
+}
+
+.function-keys .key {
+    height: 2.5em;
+    aspect-ratio: 1.43/1;
+}
+
+.key-space {
+    flex-grow: 1;
+}
+
+.key-esc {
+    aspect-ratio: 2.1 / 1;
+}
+
+.key-tab {
+    aspect-ratio: 1.7 / 1;
+}
+
+.key-caps {
+    aspect-ratio: 2.1 / 1;
+}
+
+.key-backspace {
+    aspect-ratio: 2.4 / 1;
+}
+
+.key-enter {
+    flex-grow: 1;
+    position: relative;
+    border-bottom-right-radius: 0;
+}
+
+.key-enter::after {
+    display: block;
+    content: '';
+    background-color: inherit;
+    border: inherit;
+    box-shadow: inherit;
+    position: absolute;
+    top: 100%;
+    right: -1px;
+    height: 3.84em;
+    aspect-ratio: 1.05/1;
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top: none;
+}
+
+.key-shift-left {
+    aspect-ratio: 1.5 / 1;
+}
+
+.key-shift-right {
+    flex-grow: 1;
+}
+
+.key-ctrl-left,
+.key-alt-left,
+.key-win-left,
+.key-ctrl-right,
+.key-alt-right,
+.key-win-right {
+    aspect-ratio: 1.69 / 1;
+}

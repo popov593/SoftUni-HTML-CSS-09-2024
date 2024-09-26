@@ -1,0 +1,10 @@
+Why Flexbox?
+
+For a long time, the only reliable cross-browser compatible tools available for creating CSS layouts were features like floats and positioning. These work, but in some ways they're also limiting and frustrating.
+The following simple layout designs are either difficult or impossible to achieve with such tools in any kind of convenient, flexible way:
+
+Vertically centering a block of content inside its parent.
+Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available.
+Making all columns in a multiple-column layout adopt the same height even if they contain a different amount of content.
+
+As you'll see in subsequent sections, flexbox makes a lot of layout tasks much easier. Let's dig in!

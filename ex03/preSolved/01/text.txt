@@ -1,0 +1,21 @@
+
+Three laws of robotics
+Rules developed by science-fiction writer Isaac Asimov, who sought to create an ethical system for humans and robots.
+
+
+1st Law
+
+A robot may not injure a human being or, through inaction, allow a human being to come to harm
+
+
+2nd Law
+
+A robot must obey the orders given it by human beings except where such orders would conflict with the First Law
+
+
+3rd Law
+
+A robot must protect its own existence as long as such protection does not conflict with the First or Second Law
+
+
+Asimov later added another rule, known as the fourth or zeroth law, that superseded the others. It stated that “a robot may not harm humanity, or, by inaction, allow humanity to come to harm.”

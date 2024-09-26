@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font: 14px/1.5em Lato, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    border: 2px solid green;
+}
+
+.site {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.site > * {
+    border: 2px solid blue;
+    padding: 2em;
+}
+
+.site > * + * {
+    margin-top: 2em;
+}
+
+.site-content {
+    flex: 1 1 auto;
+}

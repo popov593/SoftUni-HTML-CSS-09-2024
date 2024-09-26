@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.nav-menu {
+    list-style-type: none;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    background-color: silver;
+    gap: 5px;
+    align-items: center;
+}
+.nav-item {
+    background-color: #FFF;
+    color: orange;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 0 20px;
+}
+.p-40 {
+    font-size: 40px;
+}
