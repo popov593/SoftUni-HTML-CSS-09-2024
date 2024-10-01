@@ -9,6 +9,7 @@ a {
 }
 body {
     background: #EEE;
+    font-size: 60px;
 }
 .site {
     width: 80%;
@@ -48,4 +49,25 @@ body {
 }
 .site.two > aside {
     order: 2;
+}
+
+
+@media print {
+    body:after {
+        content: url('https://softuni.bg/Content/images/home-page/sstoikov-1.png');
+        color: red;
+        display: block;
+    }  
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+    .site {
+        padding: 10px;
+    }
+    h3 {
+        font-size: 60px;
+    }
 }

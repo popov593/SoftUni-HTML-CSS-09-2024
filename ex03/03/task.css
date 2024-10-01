@@ -52,3 +52,14 @@ body {
 .week > div:nth-of-type(7) {
     flex: 1 1 100%;
 }
+
+@media (min-width: 1280px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+@media (max-width: 1199px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}

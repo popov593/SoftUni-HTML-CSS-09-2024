@@ -53,3 +53,29 @@ footer:before {
 footer:before {
     margin: 0px auto 30px auto;
 }
+
+/** Tablet **/
+@media (min-width: 611px) and (max-width: 1024px) {
+    .columns {
+        padding: 20px 25px;
+    }
+    .columns article {
+        flex: 0 0 calc( ( 100% / 2 ) - ( 2 * 20px ) );
+    }
+}
+
+@media print, (max-width: 610px) {
+    .columns {
+        padding: 10px 15px;
+    }
+    .columns article {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    .columns article {
+        flex: 0 0 calc( ( 100% / 16 ) - ( 2 * 20px ) );
+    }
+}

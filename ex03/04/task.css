@@ -31,3 +31,47 @@ a {
 .p-40 {
     font-size: 40px;
 }
+
+@media (min-width: 1025px) {
+    .show-mobile {
+        display: none !important;
+    }
+}
+@media (max-width: 1024px) {
+    i {
+        font-size: 40px !important;
+    }
+    .hide-mobile, .fa-xmark {
+        display: none !important;
+    }
+    .container:hover .nav-menu, 
+    .container:hover .fa-xmark {
+        display: block !important;
+    }
+    .container:hover .fa-bars {
+        display: none  !important;
+    }
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        flex: 0 0 100%;
+        margin: 0;
+        background: transparent;
+        color: black;
+        border: 0;
+        border-bottom: 1px solid black;
+    }
+    .nav-menu .nav-item:last-of-type {
+        border-bottom: 0; 
+    }
+    .nav-item:before {
+        content: '>';
+    }
+}
+@media (max-width: 610px) {
+    .nav-item {
+        background-color: yellow;
+        color: red;
+    }
+}

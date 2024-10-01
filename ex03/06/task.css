@@ -70,3 +70,29 @@ body {
     flex-wrap: nowrap;
     flex-grow: 1;
 }
+
+@media (max-width: 1024px) {
+    .quoteContainer > * {
+        flex: 0 0 100%;
+    }
+    .rightArticle {
+        order: 1;
+    }
+    .leftArticle {
+        order: 2;
+        flex: 0 0 100%;
+    }
+    .quoteContainer article {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .leftArticle > i {
+        flex: 0 0 10%;
+    }
+    .leftArticle > p {
+        flex: 0 0 calc(90% - 40px) ;
+    }
+    .leftArticle > p.author {
+        flex: 0 0 100%;
+    }
+}

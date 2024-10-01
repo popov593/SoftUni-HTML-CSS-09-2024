@@ -32,3 +32,28 @@ figure {
     flex-wrap: wrap;
     align-items: flex-end;
 }
+
+@media (max-width: 610px) {
+    .container {
+        justify-content: space-between;
+    }
+    figure > * {
+        flex-basis: 100%;
+    }
+    .gallery-item {
+        flex: 0 0 calc( (100% / 2 ) - 20px );
+    }
+    .gallery-item img {
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 380px) {
+    .gallery-item {
+        flex: 0 0 100%;
+    }
+    .gallery-item img {
+        height: 250px;
+    }
+}
