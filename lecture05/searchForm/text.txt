@@ -1,0 +1,14 @@
+The Form Element
+The form element represents a document section containing interactive controls for submitting information.
+
+Attribute - method="get" (default)
+Form data appended to the action URL with a ? separator.
+            
+
+Attribute - method="post" (default)
+Form data sent as the request body.
+
+Search
+    
+Submit
+    

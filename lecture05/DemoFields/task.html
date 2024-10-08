@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <form>
+
+        <fieldset class="column">
+            <legend>Personal Details</legend>
+        
+            <label for="first_name" class="required">First Name</label>
+            <input type="text" id="first_name" name="first_name" required placeholder="Enter your first name">
+
+            <label for="last_name" class="required">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="password" class="required">Password (min. 6 chars)</label>
+            <input type="password" id="password" name="password" required minlength="6">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="882-02-02-02" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}">
+
+            <label for="height">Enter your height in CM</label>
+            <input type="number" id="height" name="height" min="110" max="250" value="150" step="5">
+
+            <label for="height">Enter your weight in KG</label>
+            <input type="range" id="weight" name="weight" min="40" max="250" value="100" step="5">
+
+            <label for="month">Birth Month</label>
+            <input type="date" id="month" name="month">
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <div>
+                <p>What course you would like to join?</p>
+                <input type="radio" id="react" name="course_choice" value="React.js">
+                <label for="react">React.js</label>
+                <input type="radio" id="next" name="course_choice" value="Next.js">
+                <label for="react">Next.js</label>
+            </div>
+
+            <div>
+                <p>What is your choice for back-end coding?</p>
+                <input type="checkbox" id="php" name="backend_choice" value="PHP">
+                <label for="php">PHP</label>
+                <input type="checkbox" id="next" name="backend_choice" value="Python">
+                <label for="react">Python</label>
+            </div>
+
+            <div>
+                <p>What is your favourite IDE?</p>
+                <select name="ide" id="ide-choice">
+                    <option value="">Please choose an option</option>
+                    <option value="VSCode">VS Code</option>
+                    <option value="Atom">Atom</option>
+                    <option value="Netbeans">NetBeans</option>
+                </select>
+            </div>
+
+            <div>
+                <p>What is your favourite IDE?</p>
+                <select name="ide-multiple" id="ide-choice" multiple>
+                    <option value="">Please choose an option</option>
+                    <option value="VSCode">VS Code</option>
+                    <option value="Atom">Atom</option>
+                    <option value="Netbeans">NetBeans</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <div>
+                <label for="file">Upload your CV</label>
+                <input type="file" id="file" name="file" accept=".jpg,.pdf,.png">
+            </div>
+
+            <div>
+                <label for="file">Upload your Motivation letter</label>
+                <input type="file" id="file" name="file" accept="image/*" multiple size="1000000">
+            </div>
+
+            <div>
+                <label for="letter">Write your Motivational letter</label>
+                <textarea id="letter" name="letter" rows="4" cols="40" placeholder="Please, write something."></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Some more examples</legend>
+
+            <div>
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search">
+            </div>
+
+            <div>
+                <label for="website">Website:</label>
+                <input required type="url" id="website" name="website">
+            </div>
+        </fieldset>
+
+        <button type="submit" value="Register">Register</button>
+
+    </form>
+
+</body>
+</html>

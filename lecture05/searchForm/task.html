@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="form-container">
+
+        <i class="fa-brands fa-github"></i>
+
+        <form action="https://github.com/search" method="get" class="position-relative" target="_blank">
+
+            <fieldset>
+
+                <legend class="small">Choose Search Type</legend>
+
+                <div>
+                    <input type="radio" id="repositories" name="type" value="repositories">
+                    <label for="repositories">Repos</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="issues" name="type" value="issues">
+                    <label for="issues">Issues</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="pullrequests" name="type" value="pullrequests">
+                    <label for="pullrequests">Pull Requests</label>
+                <div>
+
+            </fieldset>
+
+            
+            <label for="search">What code are you searching today?</label>
+            <input type="search" id="search" name="q" required placeholder="Enter your search term">
+
+            
+
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        </form>
+    </div>
+
+    <div class="form-container youtube">
+
+        <i class="fa-brands fa-youtube"></i>
+
+        <form action="https://www.youtube.com/results" method="get" class="position-relative" target="_blank">
+
+             
+            <label for="search">What is your song today?</label>
+            <input type="search" id="search" name="search_query" required placeholder="Enter your search term">
+
+            
+
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        </form>
+    </div>
+
+    <div class="form-container google">
+
+        <i class="fa-brands fa-google"></i>
+
+        <form action="https://www.google.com/search" method="get" class="position-relative" target="_blank">
+
+             
+            <label for="search">What is your search?</label>
+            <input type="search" id="search" name="q" required placeholder="Enter your search term">
+
+            
+
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+        </form>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background: silver;
+}
+
+form {
+    max-width: 450px;
+    margin: 30px auto;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+form fieldset > div {
+    width: 100%;
+}
+form fieldset > div p {
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+fieldset.column {
+    flex-direction: column;
+    gap: 10px;
+}
+
+input:required:invalid {
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+input:required:valid {
+    border: 1px solid green;
+    border-radius: 3px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=date]:focus {
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=email],
+input[type=number],
+input[type=date] {
+    padding: 5px;
+}
+
+
+.required:after {
+    content: '*';
+    color: #FF0000;
+}
+
+input[type=submit] {
+    background: red;
+    border: 0;
+    padding: 10px;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: black;
+}
+
+legend {
+    background: black;
+    color: #FFF;
+    padding: 10px;
+}
+
+label {
+    font-size: 10px;
+}
+
+select {
+    width: 100%;
+}
+
+
+@media (max-width: 610px) {
+    
+}
