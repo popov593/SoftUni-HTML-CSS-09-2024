@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, input, select, button {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background: #eee;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h2:not(:first-child) {
+    margin-top: 2em;
+}
+
+form {
+    width: 60ch;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 2em 2.5em;
+    box-shadow: 0 0 0.5em 0 rgb(0,0,0,0.1);
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 1.5em;
+}
+
+input {
+    display: block;
+}
+
+/* Radio Styles */
+input[type=radio] {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    position: relative;
+    border-radius: 30px;
+}
+
+input[type=radio]:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #EEE;
+    box-shadow: 0 0 0 1px #CCC;
+    transition: all 0.25s ease-in-out;
+}
+
+input[type=radio]:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: #c67615;
+    transform: scale(0, 0);
+    transition: all 0.25s cubic-bezier(0.75, 0.01, 0.48, 2);
+}
+
+input[type=radio]:checked:before {
+    background-color: orange;
+    box-shadow: 0 0 0 1px orange;
+}
+
+input[type=radio]:checked:after {
+    transform: scale(0.75, 0.75);
+}
+
+/* Checkbox Styles */
+input[type=checkbox] {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    margin: 0 1em;
+    position: relative;
+}
+
+input[type=checkbox]:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    border-radius: 1.5em;
+    background-color: #EEE;
+    box-shadow: 0 0 0 1px #CCC;
+    transform: translate(-25%, 0);
+    transition: all 0.25s ease-in-out;
+}
+
+input[type=checkbox]:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: #c67615;
+    border-radius: 30px;
+    transform: translate(60%, 0);
+    transition: all 0.25s cubic-bezier(0.75, 0.01, 0.48, 2);
+}
+
+input[type=checkbox]:checked:before {
+    background-color: orange;
+    box-shadow: 0 0 0 1px darkorange;
+}
+
+input[type=checkbox]:checked:after {
+    transform: translate(-60%, 0);
+}
