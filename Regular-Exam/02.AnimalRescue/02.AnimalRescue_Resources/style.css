@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 16px;
+  letter-spacing: 1.5;
+  box-sizing: inherit;
+  max-width: 100vw;
+  color: #67686b;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  background: linear-gradient(
+      rgba(165, 163, 163, 0.107),
+      rgba(165, 163, 163, 0.3)
+    ),
+    url(./images/background.jpg)
+      no-repeat center center;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 2rem 0;
+  text-shadow: 1px 1px 1px rgb(80, 79, 79);
+}
+
+header nav {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li {
+  padding-right: 1em;
+}
+
+header nav img {
+  width: 50px;
+}
+
+.header-title {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  padding: 6em 0;
+  width: 80%;
+}
+
+.header-title h1 {
+  font-size: 50px;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.our-dogs-wrapper,
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.blog-section p:nth-child(2),
+.our-dogs p:nth-child(2),
+.contact p:nth-child(2) {
+  font-style: italic;
+  padding-bottom: 2.5rem;
+}
+
+.contact p:nth-child(3) {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.helpNeed {
+  padding: 2.5rem 0;
+  background-color: #dad7cd;
+}
+
+.helpNeed ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.helpNeed li {
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.helpNeed li h4 {
+  padding-bottom: 0.8rem;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.helpNeed li img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.our-dogs {
+  color: white;
+  background: #588157;
+}
+
+.our-dogs ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.our-dogs ul li img {
+  width: 250px;
+  height: 250px;
+  padding-bottom: 0.3rem;
+}
+
+.our-dogs ul li > p:nth-child(2) {
+  padding: 0;
+}
+
+.contact {
+  width: 100%;
+  color: white;
+  background-color: #588157;
+}
+
+footer {
+  background: #2d333c;
+  text-align: center;
+  color: white;
+  padding: 1em 0;
+}
